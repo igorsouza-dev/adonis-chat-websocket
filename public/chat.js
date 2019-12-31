@@ -34,7 +34,7 @@ function subscribeToChannel () {
   chat.on('message', (message) => {
     $('.messages').append(`
       <div class="message"><h3> ${message.username} </h3> <p> ${message.body} </p> </div>
-    `)
+    `).animate({ scrollTop: 9999 }, 'slow');
   })
 }
 
